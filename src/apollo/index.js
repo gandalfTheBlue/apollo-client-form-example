@@ -1,7 +1,7 @@
 import { ApolloClient } from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import gql from "graphql-tag";
 import { GET_USER } from "./query";
+import gql from "graphql-tag";
 
 const typeDefs = gql`
   type User {
@@ -18,7 +18,7 @@ const typeDefs = gql`
 const data = {
   user: {
     id: "1",
-    email: "shan.yang@anz.com",
+    email: "test.test@anz.com",
     password: "password",
     __typename: "User"
   }
